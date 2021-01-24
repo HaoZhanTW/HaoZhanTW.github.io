@@ -173,7 +173,10 @@ small {
 
 /* Home */
 
-#tmHome {
+#tmHome,
+#tmStrategy,
+#tmProducts,
+#tmContact {
     padding-top: 30px;
     padding-bottom: 68px;
 }
