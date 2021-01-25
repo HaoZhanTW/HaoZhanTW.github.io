@@ -406,6 +406,9 @@ p {
 }
 
 .tm-bg-black-transparent {
+    padding: 60px 30px 85px;
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: rgba(15, 29, 32, 0.76);
     color: white;
 }
