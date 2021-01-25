@@ -210,7 +210,7 @@
                                 <h2 class="text-uppercase tm-services-page-title tm-testimonials-page-title">聯絡資訊</h2>
                             </div>
                             <section class="row">
-                                <div class="col-lg-2 col-0">
+                                <div class="col-lg-2 col-12">
                                     <i class="mx-auto mb-5 fas fa-3x fa-address-card tm-app-feature-icon"></i>
                                 </div>
                                 <div class="col-lg-10 col-12">
@@ -243,27 +243,6 @@
     <script src="slick/slick.min.js"></script>
     <script>
         $(function() {
-            $('.tabgroup > div').hide();
-            $('.tabgroup > div:first-of-type').show();
-            $('.tabs a').click(function(e) {
-                e.preventDefault();
-                var $this = $(this),
-                    tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
-                    others = $this.closest('li').siblings().children('a'),
-                    target = $this.attr('href');
-                others.removeClass('active');
-                $this.addClass('active');
-                $(tabgroup).children('div').hide();
-                $(target).show();
-
-                // Scroll to tab content (for mobile)
-                if ($(window).width() < 992) {
-                    $('html, body').animate({
-                        scrollTop: $("#first-tab-group").offset().top
-                    }, 200);
-                }
-            })
-
             $('.tm-carousel').slick({
                 dots: true,
                 infinite: false,
@@ -272,33 +251,29 @@
                 slidesToShow: 3,
                 slidesToScroll: 2,
                 responsive: [{
-                        breakpoint: 1024,
-                        settings: {
-                            arrows: false,
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            dots: true
-                        }
-                    }, {
-                        breakpoint: 600,
-                        settings: {
-                            arrows: false,
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }, {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
                     }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
             });
         });
     </script>
