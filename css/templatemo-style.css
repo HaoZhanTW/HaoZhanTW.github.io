@@ -406,12 +406,17 @@ p {
 }
 
 .tm-bg-black-transparent {
-    padding: 60px 30px 85px;
+    padding: 30px 30px 30px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgba(15, 29, 32, 0.76);
     color: white;
+}
+
+.tm-strategy-img {
+    width: auto;
+    max-height: 290px;
 }
 
 .tm-about-header {
@@ -458,12 +463,14 @@ p {
 .tm-app-feature-box {
     display: flex;
     align-items: center;
-    padding: 50px 40px;
-    margin-bottom: 40px;
+    padding: 30px 30px 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .tm-app-feature-icon {
-    margin-right: 30px;
+    margin: auto;
     border-radius: 50%;
     border: 1px solid;
     width: 120px;
