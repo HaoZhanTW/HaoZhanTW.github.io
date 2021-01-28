@@ -176,7 +176,8 @@ small {
 #tmHome,
 #tmStrategy,
 #tmProducts,
-#tmContact {
+#tmContact,
+#tmDepartments {
     padding-top: 30px;
     padding-bottom: 68px;
 }
@@ -478,6 +479,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.tm-img-department {
+    padding: 30px 30px 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .tm-btn-app-feature {
