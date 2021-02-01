@@ -1,49 +1,40 @@
 /*
-
-Parallo Template
-
-https://templatemo.com/tm-534-parallo
-
-COLOR CODE
-Dark Brown: #333333
-Green: #006666
-Light Blue: #0099CC
-Blue: #039bcd
-nav link color: #666768
-
-Page 1 Image 1x1 size 400px
-3 boxes spacing 60px
-Logo size: 400x200
-840x120
-
-Home section width: 420
-
+HaoZhanTW.css
 */
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #6b6b6b;
-    overflow-x: hidden;
-}
-
-a,
-button {
-    transition: all 0.3s ease;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
+/* 滿版寬 */
 .container-fluid {
     max-width: 1310px;
 }
+
+/* menu */
+.hzBrandRow {
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+/* section */
+#hzIntroduction,
+#hzStrategy,
+#hzServices {
+    padding-top: 30px;
+    padding-bottom: 68px;
+}
+
+.hzBannerCard {
+    max-width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------- */
 
 .small,
 small {
@@ -57,20 +48,6 @@ small {
 
 .tm-bg-white-transparent {
     background-color: rgba(255, 255, 255, 0.8);
-}
-
-.tm-brand-row {
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 28px;
-}
-
-.tm-brand-container {
-    max-width: 400px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .tm-brand-icon {
@@ -92,7 +69,6 @@ small {
 
 
 /* Nav */
-
 .tm-navbar {
     /*   padding: 19px 63px; */
     max-width: 840px;
@@ -170,17 +146,6 @@ small {
     background-color: #006868;
 }
 
-
-/* Home */
-
-#tmHome,
-#tmStrategy,
-#tmProducts,
-#tmContact,
-#tmDepartments {
-    padding-top: 30px;
-    padding-bottom: 68px;
-}
 
 .tm-home-left {
     max-width: 420px;
